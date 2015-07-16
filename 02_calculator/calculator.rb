@@ -1,0 +1,35 @@
+def add(first, second)
+	first + second
+end
+
+def subtract(first, second)
+	first - second
+end
+
+def sum(array)
+	total = 0
+	array.each{ |element| total+=element}
+	total
+end
+
+def multiply(array)
+	total = 1
+	array.each{ |element| total*=element}
+	total
+end
+
+def power(first, second)
+	total = 1
+	second.times{total *= first}
+	total
+end
+
+def factorial(number)
+	total = 1
+	decrement = number
+	number.times do
+		total *= decrement
+		decrement -= 1
+	end
+	total
+end
